@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="" />
+    <script src="JavaScript.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="text-center">Travel Survey Form</h1>
+        <p class="description">
+          Thank you for joining us, let's see where would you like to travel
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="first-name">First Name</label>
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="lastName-label" for="Last-name">Last Name</label>
+          <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            placeholder="Enter your last Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="from-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional) </span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="18"
+            max="100"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="from-group">
+          <p>Where would you like to travel?</p>
+          <select name="role" id="countries" class="form-control" required>
+            <option disabled selected value>Choose your destination</option>
+            <option value="italy">Italy</option>
+            <option value="france">France</option>
+            <option value="germany">Germany</option>
+            <option value="spain">Spain</option>
+            <option value="portugal">Portugal</option>
+          </select>
+        </div>
+        <div class="from-group">
+          <p>Choose your package</p>
+          <label
+            ><input
+              name="user-recommend"
+              value="5-days"
+              type="radio"
+              class="input-radio"
+              checked
+            />5 Days
+          </label>
+          <label
+            ><input
+              name="user-recommend"
+              value="7-days"
+              type="radio"
+              class="input-radio"
+            />7 Days
+          </label>
+          <label
+            ><input
+              name="user-recommend"
+              value="10-days"
+              type="radio"
+              class="input-radio"
+            />10 Days
+          </label>
+        </div>
+        <div class="from-group">
+          <p>More options</p>
+          <label
+            ><input
+              type="checkbox"
+              name="prefer"
+              class="input-checkbox"
+              value="hotel"
+            />Hotel
+          </label>
+          <label
+            ><input
+              type="checkbox"
+              name="prefer"
+              class="input-checkbox"
+              value="gym"
+            />Gym
+          </label>
+          <label
+            ><input
+              type="checkbox"
+              name="prefer"
+              class="input-checkbox"
+              value="restaurant"
+            />Restaurants
+          </label>
+          <label
+            ><input
+              type="checkbox"
+              name="prefer"
+              class="input-checkbox"
+              value="airport-transfer"
+            />Airport transfer
+          </label>
+          <label
+            ><input
+              type="checkbox"
+              name="prefer"
+              class="input-checkbox"
+              value="tour-guide"
+            />Tour guide
+          </label>
+          <label
+            ><input
+              type="checkbox"
+              name="prefer"
+              class="input-checkbox"
+              value="personal-driver"
+            />Personal driver
+          </label>
+          <label
+            ><input
+              type="checkbox"
+              name="prefer"
+              class="input-checkbox"
+              value="package-tour"
+            />Package tour
+          </label>
+        </div>
+        <div class="from-group">
+          <p>Where did you hear about us</p>
+          <label>
+            <input
+              type="radio"
+              class="input-radio"
+              value="friend"
+              name="user-recommend"
+            />Friends
+          </label>
+          <label>
+            <input
+              type="radio"
+              class="input-radio"
+              value="website"
+              name="user-recommend"
+            />Website
+          </label>
+          <label>
+            <input
+              type="radio"
+              class="input-radio"
+              value="social-media"
+              name="user-recommend"
+            />Social media</label
+          >
+          <label
+            ><input
+              type="radio"
+              class="input-radio"
+              value="others"
+              name="user-recommend"
+            />Others</label
+          >
+        </div>
+        <div class="from-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            name="comment"
+            id="comments"
+            class="input-textarea"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="from-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
